@@ -2,3 +2,83 @@
     font-family: 'Roboto';
     src: url(../font/Roboto-Regular.ttf);
 }
+
+body {
+    background-color: lightgrey;
+    font-family: 'Roboto';
+    width: 95vw;
+    height: 95vh;
+    margin: auto;
+}
+
+header {
+    display : none;
+    text-align: center;
+    line-height: 4vh;
+    font-size: 4vh;
+}
+
+h2 {
+    text-align: center;
+    padding: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+section {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+
+footer {
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0%;
+    padding: 10px;
+    line-height: 4vh;
+    font-size: 4vh;
+}
+
+
+@media print {
+    footer {
+        display: block;
+    }
+}
+
+@media screen and (min-width:640px) {
+
+    main{
+        flex-direction: row;    
+    }
+
+    h2 {
+        display: block;
+        width: 100%;
+    }
+
+    section {
+        width: 35%;
+    }
+}
+
+@media screen and (min-width:800px) {
+
+    header {
+        display: block
+    }
+
+    section {
+        max-width: 300px;
+    }
+}
+
