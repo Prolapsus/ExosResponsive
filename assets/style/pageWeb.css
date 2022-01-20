@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    display : none;
+    display: none;
     text-align: center;
     line-height: 4vh;
     font-size: 4vh;
@@ -39,6 +39,7 @@ section {
 
 
 footer {
+    visibility: hidden;
     width: 100%;
     text-align: center;
     position: fixed;
@@ -48,12 +49,13 @@ footer {
     font-size: 4vh;
 }
 
-
+/* Pour avoir un footer et un Header Uniquement à l'impression dans toutes les résolutions */
 @media print {
     footer {
-        display: block;
+        visibility: visible;
     }
 }
+
 
 @media screen and (min-width:640px) {
 
@@ -74,7 +76,7 @@ footer {
 @media screen and (min-width:800px) {
 
     header {
-        display: block
+        display: block;
     }
 
     section {

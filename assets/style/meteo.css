@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 95vw;
+    height: 95vh;
+    margin : 10px auto;
+    border: 1px solid yellow;
+}
+
+header {
+    height : 5%;
+}
+
+main section:first-of-type {
+    height: 15%;
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-areas: "gauche droite";
+}
+
+#gauche {
+    text-align: left;
+}
+
+#droite {
+    align-items: end;
+}
+ul {
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+
+#semaine {
+    width: 100%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    border: 1px solid black;
+}
+
+
+#test {
+    
+}
+
+
+
+
+
+.ligne {
+    border: 1px solid black;
+}
