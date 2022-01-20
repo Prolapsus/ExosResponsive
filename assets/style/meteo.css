@@ -40,20 +40,20 @@ li {
     width: 100%;
     height: 80%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(7, 1fr);
-    border: 1px solid black;
+}
+ 
+#semaine > article {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid lightgrey;
+}
+#semaine article:last-of-type {
+    border-bottom: 1px solid lightgrey;
 }
 
-
-#test {
-    
-}
-
-
-
-
-
-.ligne {
-    border: 1px solid black;
+.jour {
+    font-weight: bold;
+    ;
 }
