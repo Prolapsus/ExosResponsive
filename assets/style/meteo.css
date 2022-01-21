@@ -8,7 +8,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: linen;
+    background-image: url(../img/gradientBleuCiel.jpg);
     font-family: 'Roboto';
     width: 95vw;
     height: 95vh;
@@ -66,24 +66,48 @@ li {
 }
 
 @media screen and (min-width: 640px) {
+    body {
+        font-size: 120%;
+    }
     header {
-        height: 15%;
+        height: 20%;
     }
     section:first-of-type{
-        height: 15%;
+        height: 20%;
     }
-    main {
-        height : 70%;
+    #semaine {
+        height : 100%;
     }
 }
 
 @media screen and (min-width: 900px) {
+    body {
+        background-image: url(../img/gradientBleuCiel.jpg);
+    }
+    .temperature {
+        display: flex;
+        justify-content: center;
+    }
     #semaine {
         display: flex;
         flex-direction: row;
     }
-    #semaine article {
+    .ligne {
         display: flex;
         flex-direction: column;
+        width: 100%;
+        border: none;
+    }
+    .ligne:last-of-type {
+        border-bottom: none;
+    }
+    .jour {
+        text-align: center;
+    }
+    .ligne >* {
+        width: 100%;
+    }
+    #semaine {
+        margin-top: 5%;
     }
 }
