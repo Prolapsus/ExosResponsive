@@ -4,7 +4,8 @@
 }
 
 body {
-    background-color: lightgrey;
+    background: rgb(223,220,176);
+    background: radial-gradient(circle, rgba(223,220,176,1) 0%, rgba(118,171,74,1) 100%);
     font-family: 'Roboto';
     width: 95vw;
     height: 95vh;
@@ -19,8 +20,12 @@ header {
 }
 
 h2 {
+    display: none;
     text-align: center;
     padding: 10px;
+}
+h2:first-of-type {
+    display: block;
 }
 
 main {
@@ -33,11 +38,9 @@ main {
 section {
     margin: 20px;
     padding: 10px;
-    border: 1px solid black;
     border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
-
-
 footer {
     visibility: hidden;
     width: 100%;
@@ -49,7 +52,7 @@ footer {
     font-size: 4vh;
 }
 
-/* Pour avoir un footer et un Header Uniquement à l'impression dans toutes les résolutions */
+/* Pour avoir un footer Uniquement à l'impression dans toutes les résolutions */
 @media print {
     footer {
         visibility: visible;
@@ -58,27 +61,44 @@ footer {
 
 
 @media screen and (min-width:640px) {
-
+    body {
+        background: rgb(176,223,211);
+        background: radial-gradient(circle, rgba(176,223,211,1) 0%, rgba(74,171,159,1) 100%);
+    }
     main{
         flex-direction: row;    
     }
 
-    h2 {
-        display: block;
-        width: 100%;
+    h2:first-of-type {
+        display: none;
     }
-
+    h2:nth-child(2) {
+        display: block;
+        width: 100%
+    }
+    h3 {
+        text-align: center;
+    }
     section {
         width: 35%;
     }
 }
 
 @media screen and (min-width:800px) {
-
+    body {
+        background: rgb(230,158,227);
+        background: radial-gradient(circle, rgba(230,158,227,1) 0%, rgba(210,127,185,0.9696969696969697) 100%);
+    }
     header {
         display: block;
     }
-
+    h2:nth-of-type(2) {
+        display: none;
+    }
+    h2:last-of-type {
+        display: block;
+        width: 100%;
+    }
     section {
         max-width: 300px;
     }
