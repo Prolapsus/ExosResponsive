@@ -7,22 +7,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-header {
-    text-align: center;
-}
-header img:first-of-type {
-    margin: 5px;
-    float:left;
-}
-header :nth-child(2) {
-    margin: 5px;
-    float:right;
-}
-h1 {
-    margin: 30px;
-    clear: both;
-}
 a {
     text-decoration: none;
     border: 1px solid black;
@@ -40,12 +24,14 @@ a {
 h2 {
     font-size: 1.2em;
 }
-article {
+article :nth-child(2) {
     background-color: lightgrey;
     border-radius: 10px;
+    padding: 10px;
 }
-
-
+article img {
+    padding: 5px;
+}
 footer {
     text-align: center;
 }

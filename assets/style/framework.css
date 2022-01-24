@@ -11,7 +11,7 @@
 }
 .col {
     float: left;
-    min-height: 2px;
+    min-height: 10px;
 }
 .col-xs-1 {
     width: calc(100%/12);
@@ -50,9 +50,6 @@
     width: calc(1200%/12);
 }
 @media screen and (min-width:701px) and (max-width:900px) {
-    header :nth-child(2) {
-        display:none;
-    }
     a {
         visibility: visible;
     }
@@ -94,9 +91,6 @@
     }
 }
 @media screen and (min-width: 901px) and (max-width: 1199px){
-    header :nth-child(2) {
-        display:none;
-    }
     a {
         visibility: visible;
     }
@@ -138,9 +132,6 @@
     }
 }
 @media screen and (min-width: 1200px) {
-    header :nth-child(2) {
-        display:none;
-    }
     a {
         visibility: visible;
     }
