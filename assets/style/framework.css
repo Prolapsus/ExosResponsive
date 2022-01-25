@@ -11,7 +11,7 @@
 }
 .col {
     float: left;
-    min-height: 10px;
+    min-height: 15px;
 }
 .col-xs-1 {
     width: calc(100%/12);
