@@ -7,7 +7,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-h1{
+h1 {
     text-align: center;
 }
 /* Oui j'ai mis un text-align à la place d'utiliser les colonnes parce que le déclagae au fur et a mesure des modifs de résolution fait vraiment moche, même en ajoutant encore plus de break-points */
@@ -19,14 +19,13 @@ a {
 }
 a:hover {
     background-color: lightgrey;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 a {
     visibility:hidden;
 }
-h2 {
-    font-size: 1.2em;
-}
+/* Pour que mon a soit toujours présent et me serve de "marge gratuitement" */
+
 article :nth-child(2) {
     background-color: lightgrey;
     border-radius: 10px;
